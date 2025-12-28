@@ -10,16 +10,8 @@
 ```
 cd cmd
 go build -o app.exe
-.pp.exe
+.app.exe
 ```
-
-Linux/macOS:
-
-```
-go build -o app && ./app
-```
-
----
 
 ## 📦 Команды
 
@@ -40,33 +32,17 @@ go build -o app && ./app
 ## Примеры использования
 
 ```
-.pp.exe add "Buy groceries"
+.app.exe add "Buy groceries"
 # Task added successfully (ID: 1)
 
-.pp.exe update 1 "Buy groceries and cook dinner"
-.pp.exe delete 1
+.app.exe update 1 "Buy groceries and cook dinner"
+.app.exe delete 1
 
-.pp.exe mark-in-progress 1
-.pp.exe mark-done 1
+.app.exe mark-in-progress 1
+.app.exe mark-done 1
 
-.pp.exe list
-.pp.exe list done
-.pp.exe list todo
-.pp.exe list in-progress
-```
-
----
-
-## Формат хранения (`storage.json`)
-
-```
-[
-  {
-    "id": 1,
-    "description": "Buy groceries",
-    "status": "todo",
-    "createdAt": "2025-12-22T00:56:20",
-    "updatedAt": "2025-12-22T01:10:42"
-  }
-]
+.app.exe list
+.app.exe list done
+.app.exe list todo
+.app.exe list in-progress
 ```
